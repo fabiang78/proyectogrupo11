@@ -1,0 +1,146 @@
+/* body , cuerpo */
+body{
+    /* fuente aplicada en general */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* encabezado */
+header {
+    background-color: #a89a9a;
+    padding: 20px 0;
+}
+
+
+.div-header{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    /* subrayado */
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/* main - principal */
+main{
+    background-color: #803030;
+    padding: 10px;
+}
+
+/* formulario */
+form{
+    margin: 10px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input{
+    display: block; 
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+select, option{
+
+    margin: 10px;
+
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.checkbox{
+    margin:20px 0;
+}
+
+/* boton enviar */
+.enviar{
+    margin-left: 5%;
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    /* border:none; */
+    border: solid 1px #ff4800;
+    border-radius: 2px;
+
+    /* transicion - puntero mouse */
+    transition: 1s all;
+    cursor:pointer;
+}
+
+/* mouse sobre boton enviar */
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+footer{
+    text-align: center;
+    
+    background: #a89a9a;
+    padding:50px;
+}
+
+
+/* darle otro estilo si el tamaño es menor a 400 px */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .div-header{
+        width: auto;
+    }
+
+    
+}
