@@ -2,7 +2,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     /* fuente externa de google, fonts.google.com - montserrat */
 }
-
+.logon{
+    border-radius: 125px;
+}
 header {
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -44,7 +46,8 @@ nav a:hover{
 /*css para nuestra home */
 
 .banner{
-    width: 100%;
+    width: 70%;
+    margin: 0 10% 0 10%
 }
 
 
@@ -104,7 +107,7 @@ p:first-line{
     font-style: italic;
 }
 
-.img-sobre{
+.logon1{
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
@@ -158,9 +161,9 @@ p:first-line{
     font-weight: bold;
 }
 
-.imagen-diferenciales{
-    width: 60%;
-
+.logon-dif{
+    width: 30%;
+    
     /* sombras */
     box-shadow: 10px 10px #000000;
 
