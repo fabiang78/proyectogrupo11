@@ -10,7 +10,9 @@ header {
     padding: 20px 0;
 }
 
-
+.logon{
+    border-radius: 125px;
+      }
 .div-header{
     width: 940px;
     position: relative;
@@ -127,7 +129,38 @@ footer{
     background: #a89a9a;
     padding:50px;
 }
+.contenedor-iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 
+    
+}
+
+.contenedor-iconos a{
+    font-size: 2rem;
+
+    /* transicion - puntero mouse */
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.icono-f{
+    /*color: rgb(0,0,255);*/
+    color: black;
+}
+.icono-w{
+    /*color: green;*/
+    color: black;
+}
+.icono-i{
+    /*color: rgb(228,64,95);*/
+    color: black;
+}
+
+.contenedor-iconos a:hover{
+    transform: scale(1.2);
+}
 
 /* darle otro estilo si el tamaño es menor a 400 px */
 @media screen and (max-width:480px){

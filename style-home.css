@@ -11,13 +11,16 @@ header {
 }
 
 .caja{
-    width: 940px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /*position: relative;*/
     margin: 0 auto;
 }
 
 nav{
-    position: absolute;
+   /* position: absolute; */
     top:110px;
     right: 0;
 }
@@ -46,8 +49,8 @@ nav a:hover{
 /*css para nuestra home */
 
 .banner{
-    width: 70%;
-    margin: 0 10% 0 10%
+    width: 100%;
+    margin: 0 10% 0 10%;
 }
 
 
@@ -55,7 +58,7 @@ nav a:hover{
 .principal{
     padding: 3em 0;
     background: #FEFEFE;
-    width: 940px;
+    width: 90%;
     margin: 0 auto; 
 }
 
@@ -115,7 +118,8 @@ p:first-line{
 }
 
 .mapa{
-    padding: 3em 0;
+    width: 100%;
+    padding: 1em;
     background: linear-gradient(#fefefe, #88888888);
 }
 
@@ -125,8 +129,8 @@ p:first-line{
 }
 
 .mapa-contenido{
-    width: 940px;
-    margin: 0 auto;
+    width: 90%;
+    margin:  auto;
 }
 
 .diferenciales{
@@ -162,7 +166,7 @@ p:first-line{
 }
 
 .logon-dif{
-    width: 30%;
+    width: 50%;
     
     /* sombras */
     box-shadow: 10px 10px #000000;
@@ -183,7 +187,7 @@ p:first-line{
 }
 
 .video{
-    width:  560px;
+    width:  90%;
     margin: 1em auto;
 }
 
@@ -191,8 +195,16 @@ p:first-line{
 footer{
     text-align: center;
     /* background: url(imagenes/bg.jpg); */
-    background-color: coral;
-    padding:40px;
+    background-color: #524b4b;
+    padding:50px;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    
 }
 
 .copyright{
@@ -201,6 +213,31 @@ footer{
     margin:20px;
 }
 
+/* iconos */
+.contenedor-iconos a{
+    font-size: 2rem;
+
+    /* transicion - puntero mouse */
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.icono-f{
+    /*color: rgb(0,0,255);*/
+    color: black;
+}
+.icono-w{
+    /*color: green;*/
+    color: black;
+}
+.icono-i{
+    /*color: rgb(228,64,95);*/
+    color: black;
+}
+
+.contenedor-iconos a:hover{
+    transform: scale(1.2);
+}
 
 @media screen and (max-width:480px){
     h1{
